@@ -41,7 +41,7 @@ const Home: NextPage = () => {
           </a>
 
           <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
+            href="/soon/"
             className={styles.card}
           >
             <h2>Soon &rarr;</h2>
@@ -49,7 +49,7 @@ const Home: NextPage = () => {
           </a>
 
           <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="/"
             className={styles.card}
           >
             <h2>Odd &rarr;</h2>

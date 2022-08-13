@@ -5,7 +5,7 @@ export const navLinks = [
     },    
     {
       name: "Youtube",
-      path: "/blog",
+      path: "https://www.youtube.com/channel/UCfrwHFvGCdf0_nVW4seBwrg",
     },
     {
       name: "Github",
