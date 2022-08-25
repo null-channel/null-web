@@ -83,6 +83,8 @@
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
+  box-shadow: 0 4px 8px 0 #4f4f4f;
+  transition: 0.3s;
 }
 
 .card:hover,
