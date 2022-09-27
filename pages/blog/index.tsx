@@ -25,7 +25,7 @@ export default function Posts({
             <h1>All the links are belong to us</h1>
             <ul className={utilStyles.list}>
             {allPostsData.map(({ id, date, title }) => (
-                <li className={cards.card}>
+                <li key={id} className={cards.card}>
                 <a href={`/blog/${id}`}> 
                         <div>{title}</div>
                         <small className={utilStyles.lightText}>
