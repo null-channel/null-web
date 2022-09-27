@@ -5,6 +5,7 @@ on:
     branches: 
      - 'main'
      - 'v*.*'
+     - 'deployments'
     tags:
      - 'v*.*.*'
   pull_request:
