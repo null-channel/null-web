@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: null-web
+spec:
+  selector:
+    matchLabels:
+      app: null-web
+  template:
+    metadata:
+      labels:
+        app: null-web
+    spec:
+      containers:
+      - name: null-web
+        image: # not yet
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 3000
+
