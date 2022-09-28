@@ -4,10 +4,6 @@ on:
   push:
     branches: 
      - 'main'
-     - 'v*.*'
-     - 'deployments'
-    tags:
-     - 'v*.*.*'
   pull_request:
     branches: [ main ]
 
@@ -48,5 +44,5 @@ jobs:
           file: Dockerfile
           platforms: linux/arm64,linux/amd64
           push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ steps.docker_meta.outputs.tags }}
+          tags: ${{ github.sha }}
           labels: ${{ steps.docker_meta.outputs.labels }}
