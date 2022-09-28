@@ -10,7 +10,7 @@ import Header from '../components/navbar'
 export default function Soon() {
   return (
     <Layout>
-        <div>Want to know what is in the pipeline?! don't we all?</div>
+        <div>Want to know was is in the pipeline?! don&apos;t we all?</div>
     </Layout>
   )
 }

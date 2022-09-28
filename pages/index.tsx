@@ -30,33 +30,35 @@ const Home: NextPage = () => {
 
 
         <div className={styles.grid}>
-          <a href="https://www.youtube.com/channel/UCfrwHFvGCdf0_nVW4seBwrg" className={styles.card}>
+        <Link href={"https://www.youtube.com/channel/UCfrwHFvGCdf0_nVW4seBwrg"} className={styles.grid}>
+          <a className={styles.card}> 
             <h2>Videos &rarr;</h2>
             <p>Find videos on all my favorite topics!</p>
           </a>
+        </Link>
 
-          <a href="/blog/" className={styles.card}>
+        <Link href="/blog" className={styles.grid}>
+          <a className={styles.card}>
             <h2>Blog &rarr;</h2>
             <p>A blog about what we are doing!</p>
           </a>
+        </Link>
 
-          <a
-            href="/soon/"
-            className={styles.card}
-          >
+        <Link href="/soon" className={styles.grid}>
+          <a className={styles.card}>
             <h2>Soon &rarr;</h2>
             <p>Discover features and things coming soon?! Yes.</p>
           </a>
+        </Link>
 
-          <a
-            href="/"
-            className={styles.card}
-          >
+        <Link href="/" className={styles.grid}>
+          <a className={styles.card}>
             <h2>Odd &rarr;</h2>
             <p>
               Looks odd without 4th a box. only aesthetic value
             </p>
           </a>
+        </Link>
         </div>
       </main>
 
