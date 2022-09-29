@@ -4,6 +4,7 @@ on:
   push:
     branches: 
      - 'main'
+     - 'deployments'
   pull_request:
     branches: [ main ]
 
@@ -35,4 +36,4 @@ jobs:
           platforms: linux/arm64,linux/amd64
           push: ${{ github.event_name != 'pull_request' }}
           tags:  nullchannel/nullcloud-frontend:${{ github.sha }}
-          labels: ${{ steps.docker_meta.outputs.labels }}
+          labels: ${{ steps.docker_meta.outputs.labels }} 
