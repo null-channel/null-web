@@ -1,7 +1,16 @@
+---
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: web
+  labels:
+    name: web
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: null-web
+  namespace: web
 spec:
   selector:
     matchLabels:
