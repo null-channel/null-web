@@ -27,7 +27,7 @@ jobs:
         with:
           # list of Docker images to use as base name for tags
           images: |
-            nullchannel/null-web-frontend
+            nullchannel/nullcloud-frontend
           # add git short SHA as Docker tag
           tag-sha: true
       -
