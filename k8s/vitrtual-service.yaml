@@ -4,8 +4,12 @@ metadata:
   name: null-web-vs 
 spec:
   hosts:
-  - # hostname??
+  - "*"
+  gateways:
+  - nullcloud-gateway
   http:
   - route:
     - destination:
         host: null-web 
+        port:
+          number: 80
