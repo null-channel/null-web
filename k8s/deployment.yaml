@@ -20,7 +20,7 @@ spec:
       labels:
         app: null-web
     spec:
-      containers:
+      containers: 
       - name: null-web
         image: nullchannel/nullcloud-frontend:c825467ce275fa2d190f398f7356411acc32c968
         resources:
