@@ -6,7 +6,7 @@ spec:
   hosts:
   - "*"
   gateways:
-  - null-cloud-gateway
+  - nullcloud-gateway
   http:
   - route:
     - destination:
