@@ -5,15 +5,17 @@
 }
 .nav{
   display: flex;
-  padding: 1rem 7rem;
   justify-content: space-between;
+  padding: 0rem 5rem;
   align-items: center;
   background-color: rgba(1, 17, 23, 0.483);
 }
 .nav_item{
     list-style-type: none;
     align-items: center;
-    padding: 1rem;
+    padding: 2rem;
+    margin: 0;
+    border: 0;
     cursor: pointer;
 }
 .nav__menu-bar{
@@ -21,6 +23,18 @@
   flex-direction: column;
   row-gap: 6px;
   cursor: pointer;
+}
+.left_side{
+  display: flex;
+}
+.right_side{
+  display: flex;
+}
+.sign_in{
+  padding: 1rem;
+}
+.sign_up{
+  padding: 1rem;
 }
 .nav__menu-bar div{
   width: 40px;

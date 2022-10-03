@@ -11,6 +11,7 @@ export default function Soon() {
   return (
     <Layout>
         <div>Want to know was is in the pipeline?! don&apos;t we all?</div>
+        <div>We have a lot of fun plans.</div>
     </Layout>
   )
 }

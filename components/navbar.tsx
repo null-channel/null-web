@@ -7,6 +7,7 @@ export default function Header() {
   return (
     <header>
       <nav className={styles.nav}>
+        <div className={styles.left_side}>
         <div className={styles.brand}>
             <Link href="/">
               <h3>NULL</h3>
@@ -14,13 +15,28 @@ export default function Header() {
         </div>
         {navLinks.map((link, index) => {
           return (
+
+            <Link href={link.path}>
             <ul className={styles.nav_item} key={index}>
-              <Link href={link.path}>
                 <li key={index}>{link.name}</li>
-              </Link>
+            
             </ul>
+            </Link>
           );
         })}
+        </div>
+        <div className={styles.right_side}>
+        <div className={styles.sign_in}>
+            <Link href="/">
+              <h3>Sign In</h3>
+            </Link>
+        </div>
+        <div className={styles.sign_up}>
+            <Link href="/">
+              <h3>Sign Up</h3>
+            </Link>
+        </div>
+        </div>
       </nav>
     </header>
   );

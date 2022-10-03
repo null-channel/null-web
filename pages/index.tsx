@@ -55,7 +55,7 @@ const Home: NextPage = () => {
           <a className={styles.card}>
             <h2>Odd &rarr;</h2>
             <p>
-              Looks odd without 4th a box. only aesthetic value
+              Looks odd without a 4th card. Only aesthetic value.
             </p>
           </a>
         </Link>
