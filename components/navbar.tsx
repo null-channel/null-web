@@ -2,6 +2,7 @@ import React from "react";
 import { navLinks } from "../lib/nav-data";
 import Link from "next/link";
 import styles from './navbar.module.css'
+import Button from '@mui/material/Button'
 
 export default function Header() {
   return (
@@ -27,14 +28,10 @@ export default function Header() {
         </div>
         <div className={styles.right_side}>
         <div className={styles.sign_in}>
-            <Link href="/">
-              <h3>Sign In</h3>
-            </Link>
+        <Button variant="contained">Sign In</Button>
         </div>
         <div className={styles.sign_up}>
-            <Link href="/">
-              <h3>Sign Up</h3>
-            </Link>
+        <Button variant="contained">Sign Up</Button>
         </div>
         </div>
       </nav>
