@@ -22,7 +22,7 @@ spec:
     spec:
       containers: 
       - name: null-web
-        image: nullchannel/nullcloud-frontend:c825467ce275fa2d190f398f7356411acc32c968
+        image: nullchannel/nullcloud-frontend:f878df8739b8c40b36011c8bd343bd79aca45352
         resources:
           limits:
             memory: "128Mi"
