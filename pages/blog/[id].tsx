@@ -11,6 +11,7 @@ export default function Post({
   postData: {
     title: string
     date: string
+    draft: boolean
     contentHtml: string
   }
 }) {

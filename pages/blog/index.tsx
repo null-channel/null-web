@@ -15,8 +15,30 @@ export default function Posts({
         date: string
         title: string
         id: string
+        draft: boolean
     }[]
 }) {
+    const env = process.env.NODE_ENV
+    function isDev(element: {
+        date: string
+        title: string
+        id: string
+        draft: boolean
+    }) {
+        if(env == "development"){
+            return true;
+        }
+        else if (env == "production"){
+            if (element.draft == true) {
+                return false
+            } else {
+                return true
+            }
+        }    
+    }
+
+    var data = allPostsData.filter(isDev)
+
     return (
         <Layout>
             <Head>
@@ -24,7 +46,8 @@ export default function Posts({
             </Head>
             <h1>All the links are belong to us</h1>
             <ul className={utilStyles.list}>
-            {allPostsData.map(({ id, date, title }) => (
+            {data.map(({ id, date, title, draft }) => (
+
                 <li key={id} className={cards.card}>
                 <a href={`/blog/${id}`}> 
                         <div>{title}</div>

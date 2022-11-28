@@ -3,6 +3,7 @@ import { navLinks } from "../lib/nav-data";
 import Link from "next/link";
 import styles from './navbar.module.css'
 import Button from '@mui/material/Button'
+import TopRight from "./topright";
 
 export default function Header() {
   return (
@@ -27,12 +28,7 @@ export default function Header() {
         })}
         </div>
         <div className={styles.right_side}>
-        <div className={styles.sign_in}>
-        <Button variant="contained">Sign In</Button>
-        </div>
-        <div className={styles.sign_up}>
-        <Button variant="contained">Sign Up</Button>
-        </div>
+          <TopRight></TopRight>
         </div>
       </nav>
     </header>
