@@ -1,0 +1,13 @@
+.youtube-icon {
+    width: 5vw;
+    height: 5vw;
+    display: inline-block;
+    color: var(--accent-color)
+}
+
+.youtube-icon-wrapper {
+display: inline-block;
+margin-left: -50px;
+}
+
+  

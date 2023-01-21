@@ -1,3 +1,24 @@
+:root {
+  --primary-color: rgb(24, 30, 32);
+  --primary-background: rgb(24,30,32);
+  --primary-window-background: rgb(23,23,23);
+  --accent-color: rgba(149,96,75,1);
+  --accent-color-interactive: rgba(96,255,249,1);
+  --primary-color-hover: rgba(34,39,40,1);
+  --primary-color-active: rgba(34,39,40,1);
+  --primary-color-focus: rgba(34,39,40,1);
+  --primary-color-highlight: rgba(149,96,75,1);
+  --primary-color-selected: rgba(149,96,75,1);
+  --primary-color-selected-hover: rgba(149,96,75,1);
+  --primary-color-selected-active: rgba(149,96,75,1);
+  --primary-color-disabled: rgba(255,255,255,1);
+  --primary-color-disabled-hover: rgba(255,255,255,1);
+  --primary-color-disabled-active: rgba(255,255,255,1);
+  --primary-color-disabled-focus: rgba(255,255,255,1);
+  --primary-color-text: rgba(172,175,171,1);
+}
+
+
 html,
 body {
   padding: 0;
@@ -22,7 +43,7 @@ a {
   }
   body {
     color: white;
-    background: rgb(2, 28, 38);
+    background: var(--primary-color);
   }
 }
 

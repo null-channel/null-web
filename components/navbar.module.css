@@ -3,13 +3,13 @@
     padding: 1rem;
     cursor: pointer;
 }
-.nav{
-  display: flex;
+.nav {
   justify-content: space-between;
-  padding: 0rem 5rem;
   align-items: center;
-  background-color: rgba(1, 17, 23, 0.483);
+  background-color: transparent;
+  padding: 1rem;
 }
+
 .nav_item{
     list-style-type: none;
     align-items: center;
@@ -24,12 +24,19 @@
   row-gap: 6px;
   cursor: pointer;
 }
-.left_side{
+.container {
   display: flex;
+  justify-content: space-between;
 }
-.right_side{
+.left_items{
   display: flex;
+  justify-content: flex-start;
 }
+.right_items{
+  display: flex;
+  justify-content: flex-end;
+}
+
 .sign_in{
   padding: 1rem;
 }
