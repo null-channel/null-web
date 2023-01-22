@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Script from 'next/script';
 import Header from '../components/navbar'
 
+
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -25,41 +26,9 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <Image src="/null-logo.svg" alt="null" width="512" height="256" />
         <h1 className={styles.title}>
-          Welcome to the Null!
+          The Null Awaits!
         </h1>
-
-
-        <div className={styles.grid}>
-        <Link href={"https://www.youtube.com/channel/UCfrwHFvGCdf0_nVW4seBwrg"} className={styles.grid}>
-          <a className={styles.card}> 
-            <h2>Videos &rarr;</h2>
-            <p>Find videos on all my favorite topics!</p>
-          </a>
-        </Link>
-
-        <Link href="/blog" className={styles.grid}>
-          <a className={styles.card}>
-            <h2>Blog &rarr;</h2>
-            <p>A blog about what we are doing!</p>
-          </a>
-        </Link>
-
-        <Link href="/soon" className={styles.grid}>
-          <a className={styles.card}>
-            <h2>Soon &rarr;</h2>
-            <p>Discover features and things coming soon?! Yes.</p>
-          </a>
-        </Link>
-
-        <Link href="/" className={styles.grid}>
-          <a className={styles.card}>
-            <h2>Odd &rarr;</h2>
-            <p>
-              Looks odd without a 4th card. Only aesthetic value.
-            </p>
-          </a>
-        </Link>
-        </div>
+        
       </main>
 
       <footer className={styles.footer}>

@@ -1,0 +1,9 @@
+.sidepanel {
+    display: inline;
+    float: right !important;
+    width: 300px;
+    height: 75vh;
+    vertical-align: middle;
+    background-color: var(--secondary-background-color);
+    top: 50%;
+}
