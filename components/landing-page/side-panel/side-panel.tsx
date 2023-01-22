@@ -7,8 +7,11 @@ import styles from './side-panel.module.css'
 
 const SidePanel: React.FC = () => {
     return (
-        <div className={styles.sidepanel}>
+        <div className={styles.sidepanel_container}>
+         
+            <div className={styles.sidepanel}>
 
+            </div>
         </div>
     );
 };

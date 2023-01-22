@@ -15,8 +15,8 @@
   --primary-color-disabled-hover: rgba(255,255,255,1);
   --primary-color-disabled-active: rgba(255,255,255,1);
   --primary-color-disabled-focus: rgba(255,255,255,1);
-  --primary-color-text: rgba(172,175,171,1);
-  --secondary-background-color: rgb(172,175,171,1);
+  --primary-color-text: rgb(62, 62, 69);
+  --secondary-background-color: rgb(32, 32, 32);
 }
 
 
